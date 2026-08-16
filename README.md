@@ -8,6 +8,16 @@ This repo holds all the design files, simulation results, layouts, and verificat
 - [LVS/](LVS/) - Contains the LVS netlist and final comparison output report.
 ---
 
+## Design Specifications (Targets)
+* **Supply Voltage ($VDD$):** 1.8V
+* **Temperature Range:** -40°C to 126°C
+* **Power Consumption:** <60 $\mu$W
+* **Off Current:** <2 $\mu$A
+* **Startup Time:** <2 $\mu$s
+* **Temperature Coefficient of $V_{REF}$:** <50 ppm/°C
+
+---
+
 ## 1. Schematic & Pre-Layout Simulations
 
 ### Reference Voltage & Breakdowns
@@ -16,6 +26,12 @@ This repo holds all the design files, simulation results, layouts, and verificat
   
 * Reference Voltage Curve (`VREF`):
   ![VREF](https://github.com/user-attachments/assets/5e47d185-63a7-4998-ad05-6405e7e66616)
+
+* Temperature Coefficient Calculation:
+
+- Formula: TC = [(V_REF,max - V_REF,min) / (V_REF,nominal * (T_max - T_min))] * 10^6
+- Values: V_REF,max = 1.1100 V, V_REF,min = 1.1056 V, V_REF,nominal = 1.108 V, T_span = 125°C - (-40°C) = 165°C
+- Calculation: [(1.1100 - 1.1056) / (1.108 * 165)] * 10^6 = 24.05 ppm/°C
 
 ### Temperature Behavior (CTAT & PTAT)
 * CTAT Analysis: 
@@ -55,3 +71,8 @@ This repo holds all the design files, simulation results, layouts, and verificat
 
 * Post-Layout VREF Output:
   ![POST SIMULATION VREF](https://github.com/user-attachments/assets/ac4e405d-bb64-4875-8ecf-da193d5db8c0)
+
+* Temperature Coefficient Calculation:
+- Formula: TC = [(V_REF,max - V_REF,min) / (V_REF,nominal * (T_max - T_min))] * 10^6
+- Values: V_REF,max = 1.0739 V, V_REF,min = 1.0674 V, V_REF,nominal = 1.071 V, T_span = 125°C - (-40°C) = 165°C
+- Calculation: [(1.0739 - 1.0674) / (1.071 * 165)] * 10^6 = 36.78 ppm/°C
