@@ -3,10 +3,9 @@
 This repo holds all the design files, simulation results, layouts, and verification reports for my Bandgap Reference (BGR) circuit built using the Sky130 PDK.
 
 ## Project Structure
-- [Layout/](Layout/) - Contains the Magic layout and extracted PEX netlist.
 - [Schematic/](Schematic/) - Contains the pre-layout schematic netlist and testbench setups.
+- [Layout/](Layout/) - Contains the Magic layout and extracted PEX netlist.
 - [LVS/](LVS/) - Contains the LVS netlist and final comparison output report.
-
 ---
 
 ## 1. Schematic & Pre-Layout Simulations
