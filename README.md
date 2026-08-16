@@ -8,7 +8,7 @@ This repo holds all the design files, simulation results, layouts, and verificat
 - [LVS/](LVS/) - Contains the LVS netlist and final comparison output report.
 ---
 
-## Design Specifications (Targets)
+## Design Specifications
 * **Target Reference Voltage ($V_{REF}$):** ~1.2V
 * **Supply Voltage ($VDD$):** 1.8V
 * **Temperature Range:** -40°C to 126°C
