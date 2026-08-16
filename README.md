@@ -1,6 +1,6 @@
 # Bandgap Reference (BGR) - Sky130
 
-This repo holds all the design files, simulation results, layouts, and verification reports for my Bandgap Reference (BGR) circuit built using the Sky130 PDK process. 
+This repo holds all the design files, simulation results, layouts, and verification reports for my Bandgap Reference (BGR) circuit built using the Sky130 PDK.
 
 ## Project Structure
 - [Layout/](Layout/) - Contains the Magic layout and extracted PEX netlist.
