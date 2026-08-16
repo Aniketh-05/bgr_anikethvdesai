@@ -12,9 +12,9 @@ This repo holds all the design files, simulation results, layouts, and verificat
 * **Target Reference Voltage ($V_{REF}$):** ~1.2V
 * **Supply Voltage ($VDD$):** 1.8V
 * **Temperature Range:** -40°C to 126°C
-* **Power Consumption:** <60 $\mu$W
-* **Off Current:** <2 $\mu$A
-* **Startup Time:** <2 $\mu$s
+* **Power Consumption:** <60 μW
+* **Off Current:** <2 μA
+* **Startup Time:** <2 μs
 * **Temperature Coefficient of $V_{REF}$:** <50 ppm/°C
 
 ---
